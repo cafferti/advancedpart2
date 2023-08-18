@@ -1,16 +1,37 @@
 //types of functions
- function regularfunc(){
- return 8
+function regularfunc() {
+  return 8;
 }
 
-const advancedfunc = function(){
-    return 6
+const advancedfunc = function () {
+  return 6;
+};
+
+const arrowfunc = () => {
+  return 5;
+};
+
+const arrowfunc2 = (param) =>{
+  return 2 + 4;
 }
 
-const arrowfunc = () =>{
- return 5
-}
+//can also be written as
+const arrowfunc3 = param => 2 + 3;
+console.log(arrowfunc3())
 
-console.log(regularfunc())
-console.log(advancedfunc())
-console.log(arrowfunc())
+console.log(regularfunc());
+console.log(advancedfunc());
+console.log(arrowfunc());
+
+[`make dinner`, `wash dinners`, `catch bug`].forEach(function (value, index) {
+  console.log(value);
+  console.log(index);
+});
+
+let ourarray = [`make dinner`, `wash dinners`, `catch bug`];
+ourarray.forEach((value, index) => {
+  if (value === `make dinner`) {
+    return;
+  }
+  console.log(value);
+});
