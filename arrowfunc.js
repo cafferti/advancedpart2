@@ -1,4 +1,7 @@
-//types of functions
+//types of functions\
+
+
+
 function regularfunc() {
   return 8;
 }
@@ -11,25 +14,24 @@ const arrowfunc = () => {
   return 5;
 };
 
-const arrowfunc2 = (param) =>{
+const arrowfunc2 = (param) => {
   return 2 + 4;
-}
+};
 
-() =>{ //basic structure of an arrow function you can pass this direcctly into a function parameter
-       //but to use it on its own  to be able to be called use a name
-       const name = () =>{
-
-                         }
-
-}
+() => {
+  //basic structure of an arrow function you can pass this direcctly into a function parameter
+  //but to use it on its own  to be able to be called use a name//
+  const name = () => {};
+};
 
 //can also be written as
-const arrowfunc3 = param => 2 + 3;
-console.log(arrowfunc3())
+const arrowfunc3 = (param) => 2 + 3;
+console.log(arrowfunc3());
 
 console.log(regularfunc());
 console.log(advancedfunc());
 console.log(arrowfunc());
+
 
 [`make dinner`, `wash dinners`, `catch bug`].forEach(function (value, index) {
   console.log(value);
