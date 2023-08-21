@@ -45,3 +45,15 @@ ourarray.forEach((value, index) => {
   }
   console.log(value);
 });
+
+// SAVING FUNCTION IN AN OBJECT USING ARROW FUNCTIONS
+
+const object2 = {
+  method : () => {
+
+  },// instead of using the above USED the build in below
+
+  method(){
+
+  }
+}
