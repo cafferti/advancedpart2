@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="js-btn" onclick="">click</button>
+
+    <script>
+      const buttonElement = document.querySelector(`.js-btn`);
+      
+    const eventlistener =  () => { console.log(`clicked`)};
+
+      buttonElement.addEventListener(`click`, eventlistener);
+     
+
+        //removing eventlisteners
+      buttonElement.removeEventListener(`click`, eventlistener )
+
+
+      //addeventlistener has advantage of running two func simultaneously like
+      buttonElement.addEventListener(`click`, () => {
+        console.log(`clicked32`);
+      });
+
+      
+    </script>
+  </body>
+</html>
